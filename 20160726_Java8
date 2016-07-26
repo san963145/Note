@@ -1,13 +1,14 @@
 1.  Function Program
 
     use function as data, such as arguments and return..
+    
+    Basic Types:
+    Runnable  Callable  Fucntion  BiFunction Consumer..
 
 2.  Lambda
   
     i->i*2
     
-    Runnable  Callable  Fucntion  BiFunction Consumer
-
 3.  Optinal
     
     private static Optional<ArrayList<ExchangeRate>> get(String from)
