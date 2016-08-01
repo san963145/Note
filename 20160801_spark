@@ -1,0 +1,11 @@
+scala
+
+
+SparkContext
+
+rdd
+
+sparksql  (json db hive)
+
+
+sparkstream(real time data process)
