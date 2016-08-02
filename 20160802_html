@@ -1,4 +1,24 @@
-html5
+1.html5
 
 selector
 querySelector
+
+2.js
+
+构造器 
+var f=function(y){
+    this.x=0;
+    this.y=y;
+}
+f._proto_===Function.prototype  true
+Date._proto_===Function.prototype  true
+String._proto_===Function.prototype  true
+...
+Fucntion(){} 顶层构造器
+
+
+对象  
+var obj=new f(5);
+obj.y   obj.x
+
+obj._proto_===f.prototype  true
