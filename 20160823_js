@@ -1,0 +1,15 @@
+call()   apply()
+
+In JavaScript, functions are objects. JavaScript functions have properties and methods.
+
+call() and apply() are predefined JavaScript function methods. Both methods can be used to invoke a function,
+and both methods must have the owner object as first parameter.
+
+
+function myFunction(a, b) {
+    return a * b;
+}
+myObject = myFunction.call(myObject, 10, 2);
+
+myArray = [10, 2];
+myObject = myFunction.apply(myObject, myArray);
