@@ -1,0 +1,20 @@
+1.
+executor  物理概念   task  逻辑概念
+
+2.
+spout/bolt的生命周期如下:
+
+在提交了一个topology之后(在nimbus所在的机器),创建spout/bolt实例(spout/bolt在storm中统称为component)并进行序列化；
+
+将序列化的component发送给所有的任务所在的机器；
+
+在每一个任务上反序列化component；
+
+在开始执行任务之前, 先执行component的初始化方法(bolt是prepare, spout是open)；
+
+因此component的初始化操作应该在prepare/open方法中进行,而不是在实例化component的时候进行。
+
+3.
+
+one supervisor -- one or more workers
+one worker     -- one copy of topology      each worker equals
